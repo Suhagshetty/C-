@@ -49,5 +49,39 @@ int main() {
   std::cout << "GST:- " << GST << std::endl;
   std::cout << "Total:- " << Total << std::endl;
 
+  // Challenge:- 🧠 Challenge: Movie Ticket Booking System 🎬
+
+  std::string MovieName = "Kantara";
+  std::string CustomerName = "Suhag";
+  char Screen = 'A';
+  int NumberOfTickets = 4;
+  float TicketPrice = 250.50;
+  bool BookingConfirmed = true;
+
+  const double GSTMovie = 0.18;
+  int ConvenienceFee = 25;
+
+  double TicketCost = TicketPrice * NumberOfTickets;
+  double GSTAmount = TicketCost * GSTMovie;
+  double TotalConvenienceFee = ConvenienceFee * NumberOfTickets;
+  double Amount = TicketCost + GSTAmount + TotalConvenienceFee;
+
+  std::cout << "======== MOVIE TICKET ==========" << std::endl;
+
+  std::cout << "Movie Name:- " << MovieName << std::endl;
+  std::cout << "Customer Name:- " << CustomerName << std::endl;
+  std::cout << "Screen:- " << Screen << std::endl;
+  std::cout << "Ticket Price:- " << TicketPrice << std::endl;
+  std::cout << "Number of Tickets:- " << NumberOfTickets << std::endl;
+  std::cout << "Booking Confirmed:- " << std::boolalpha << BookingConfirmed
+            << std::endl;
+
+  std::cout << "-------------------------------" << std::endl;
+
+  std::cout << "Ticket Cost:- " << TicketCost << std::endl;
+  std::cout << "GST Amount:- " << GSTAmount << std::endl;
+  std::cout << "Total Convenience Fee:- " << TotalConvenienceFee << std::endl;
+  std::cout << "Total Amount:- " << Amount << std::endl;
+
   return 0;
 }
