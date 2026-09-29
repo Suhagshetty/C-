@@ -7,5 +7,12 @@ int main(){
     // iostream stands roughly for input/output stream.
 
 std::cout << "Hello World" << std::endl;
-    return 0;
+
+
+    // Variables:- is simply a named location used to store a Value. TYPE => VARIABLE => VALUE.
+    int age = 22;
+    age = 23;
+    std::cout << "My age is :- " << age << std::endl;
+     return 0;
+
 }
