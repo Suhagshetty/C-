@@ -48,5 +48,9 @@ int main() {
 
   // Compound Assignment Operators:-
 
+  int balance = 1000;
+  balance = balance + 500;
+  std::cout << "The Balance is:- " << balance << std::endl;
+
   return 0;
 }
