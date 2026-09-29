@@ -36,5 +36,17 @@ int main() {
   int remainder = R % S;
   std::cout << remainder << std::endl;
 
+  // INCREMENT AND DECREMENT OPERATORS
+
+  int score = 10;
+  score++;
+  std::cout << score << std::endl;
+
+  int score1 = 100;
+  score1--;
+  std::cout << score1 << std::endl;
+
+  // Compound Assignment Operators:-
+
   return 0;
 }
