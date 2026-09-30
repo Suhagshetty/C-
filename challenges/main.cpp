@@ -107,5 +107,24 @@ int main() {
   std::cout << "Player Strike Rate:- " << StrikeRate << std::endl;
   std::cout << "Player Careers Runs:- " << CareerRuns << std::endl;
 
+  // 🎯 Challenge 1 — User Profile
+
+  std::string Name;
+  int Currentage;
+  double salary;
+  char grade;
+  bool Develop;
+
+  std::cout << "Name:- " << std::endl;
+  std::cin >> Name;
+  std::cout << "Age:-" << std::endl;
+  std::cin >> Currentage;
+  std::cout << "Salary:- " << std::endl;
+  std::cin >> salary;
+  std::cout << "Grade:- " << std::endl;
+  std::cin >> grade;
+  std::cout << "Developer:- " << std::endl;
+  std::cin >> Develop;
+
   return 0;
 }
