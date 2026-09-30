@@ -66,5 +66,25 @@ int main() {
   C %= 5;
   std::cout << C << std::endl;
 
+  // TYPE CONVERSION:- Converting a value from one data type to another.
+
+  int number = 10;
+  double value = number;
+  std::cout << value << std::endl;
+
+  char Grade = 'A';
+  int values = Grade;
+  std::cout << values << std::endl;
+
+  // The above is an example of Implicit Type Conversion compiler automatically
+  // converts int dtat type to double data type.
+
+  // EXPLICIT TYPE CONVERSION:- converting a value from one data type to another
+  // using a cast operator.
+
+  int num = 10;
+  double val = static_cast<double>(num);
+  std::cout << val << std::endl;
+
   return 0;
 }
