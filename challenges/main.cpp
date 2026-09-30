@@ -83,5 +83,29 @@ int main() {
   std::cout << "Total Convenience Fee:- " << TotalConvenienceFee << std::endl;
   std::cout << "Total Amount:- " << Amount << std::endl;
 
+  using namespace std;
+  using ll = long long;
+
+  std::string PlayerName = "Virat Kholi";
+  int RunsScore = 137;
+  int BallsFaced = 92;
+  int Fours = 11;
+  int Sixes = 4;
+  double StrikeRate = (static_cast<double>(RunsScore) / BallsFaced) * 100;
+  ll CareerRuns = 18000000000;
+  const int RUNS_PER_FOUR = 4;
+  const int RUNS_PER_SIX = 6;
+  int BoundaryRuns = (Fours * RUNS_PER_FOUR) + (Sixes * RUNS_PER_SIX);
+
+  std::cout << "===== MATCH STATS =====" << std::endl;
+  std::cout << "Player Name:- " << PlayerName << std::endl;
+  std::cout << "Runs Runs:- " << RunsScore << std::endl;
+  std::cout << "Player Balls:- " << BallsFaced << std::endl;
+  std::cout << "Player Fours:- " << Fours << std::endl;
+  std::cout << "Player Sixes:- " << Sixes << std::endl;
+  std::cout << "Boundary Runs:- :- " << BoundaryRuns << std::endl;
+  std::cout << "Player Strike Rate:- " << StrikeRate << std::endl;
+  std::cout << "Player Careers Runs:- " << CareerRuns << std::endl;
+
   return 0;
 }
