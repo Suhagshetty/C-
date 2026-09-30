@@ -13,15 +13,15 @@ int main() {
 
   int marks = 87;
   if (marks >= 90) {
-    std::cout << "Grade A+";
+    std::cout << "Grade A+" << std::endl;
   } else if (marks >= 80) {
-    std::cout << "Grade A";
+    std::cout << "Grade A" << std::endl;
   } else if (marks >= 70) {
-    std::cout << "Grade B";
+    std::cout << "Grade B" << std::endl;
   } else if (marks >= 60) {
-    std::cout << "Grade C";
+    std::cout << "Grade C" << std::endl;
   } else {
-    std::cout << "Fail";
+    std::cout << "Fail" << std::endl;
   }
 
   // COMPARISON OPERATORS:- [ == , !=, > , < , >= , <= ]
@@ -90,17 +90,30 @@ int main() {
   std::cin >> dayy;
   switch (dayy) {
   case 1:
-    std::cout << "Monday";
+    std::cout << "Monday" << std::endl;
     break;
   case 2:
-    std::cout << "Tuesday";
+    std::cout << "Tuesday" << std::endl;
     break;
   case 3:
-    std::cout << "Wednesday";
+    std::cout << "Wednesday" << std::endl;
+    break;
+
+  case 4:
+    std::cout << "Thursday" << std::endl;
+    break;
+  case 5:
+    std::cout << "Friday" << std::endl;
+    break;
+  case 6:
+    std::cout << "Saturday" << std::endl;
+    break;
+  case 7:
+    std::cout << "Sunday" << std::endl;
     break;
 
   default:
-    std::cout << "Invalid day";
+    std::cout << "Invalid day" << std::endl;
   }
 
   // Console Calculator.
@@ -118,20 +131,42 @@ int main() {
 
   switch (operation) {
   case '+':
-    std::cout << "Result is:- " << num1 + num2;
+    std::cout << "Result is:- " << num1 + num2 << std::endl;
     break;
   case '-':
-    std::cout << "Result is:- " << num1 - num2;
+    std::cout << "Result is:- " << num1 - num2 << std::endl;
     break;
   case '*':
-    std::cout << "Result is:- " << num1 * num2;
+    std::cout << "Result is:- " << num1 * num2 << std::endl;
     break;
   case '/':
-    std::cout << "Result is:- " << num1 / num2;
+    std::cout << "Result is:- " << num1 / num2 << std::endl;
     break;
   default:
-    std::cout << "Invalid operation Nigga!";
+    std::cout << "Invalid operation Nigga!" << std::endl;
   }
+
+  // TERNARY OPERATOR:- it is a shorter version of if/else. condition ?
+  // value_if_true : value_if_false;
+
+  int checkAge = 20;
+  std::string result = (checkAge >= 18) ? "Adult" : "Minor";
+  std::cout << result << std::endl;
+
+  // EXAMPLE - 2
+
+  int checkNumber;
+  std::cout << "ENTER A NUMBER TO CHECK FOR EVEN OR NOT:- " << std::endl;
+  std::cin >> checkNumber;
+  std::string results = (checkNumber % 2 == 0) ? "EVEN" : "ODD";
+  std::cout << results << std::endl;
+
+  // EXAMPLE - 3
+
+  int number1 = 10;
+  int number2 = 20;
+  int largest = (number1 > number2) ? number1 : number2;
+  std::cout << "The largest number is:- " << largest << std::endl;
 
   return 0;
 }
