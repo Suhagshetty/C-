@@ -1,12 +1,13 @@
+#include <cmath>
 #include <iostream>
 #include <string>
+
 int main() {
   std::cout << "Hello I am Suhag" << std::endl;
   std::cout << "I am learning c++" << std::endl;
   std::cout << "My goal is DSA" << std::endl;
 
-  // 🧠 Challenge:-
-
+  // 🧠 Challenge:- Variables
   std::string name = "Suhag S Shetty";
   int age = 23;
   double Salary = 45000.75;
@@ -15,9 +16,9 @@ int main() {
   long long Population = 800000000;
   const double PI = 3.141592653589793;
 
-  std::cout << "My name is :-" << name << std::endl;
+  std::cout << "My name is :- " << name << std::endl;
   std::cout << "My age is :- " << age << std::endl;
-  std::cout << "My salary is :-" << Salary << std::endl;
+  std::cout << "My salary is :- " << Salary << std::endl;
   std::cout << "My Grade is :- " << Grade << std::endl;
   std::cout << "I am a Developer:- " << Developer << std::endl;
   std::cout << "The population of India is :- " << Population << std::endl;
@@ -29,35 +30,30 @@ int main() {
   double Price = 2499.50;
   char Category = 'A';
   bool InStock = true;
-
   const double GSTRate = 0.18;
 
-  double SubTotl = Price * Quantity;
-  double GST = SubTotl * GSTRate;
-  double Total = SubTotl + GST;
+  double SubTotal = Price * Quantity;
+  double GST = SubTotal * GSTRate;
+  double Total = SubTotal + GST;
 
   std::cout << "-------BILL-------" << std::endl;
-
   std::cout << "Product:- " << ProductName << std::endl;
   std::cout << "Category:- " << Category << std::endl;
   std::cout << "Quantity:- " << Quantity << std::endl;
   std::cout << "Price:- " << Price << std::endl;
-  std::cout << "IN Stock:- " << std::boolalpha << InStock << std::endl;
+  std::cout << "In Stock:- " << std::boolalpha << InStock << std::endl;
   std::cout << "--------------" << std::endl;
-
-  std::cout << "SubTotal:- " << SubTotl << std::endl;
+  std::cout << "SubTotal:- " << SubTotal << std::endl;
   std::cout << "GST:- " << GST << std::endl;
   std::cout << "Total:- " << Total << std::endl;
 
-  // Challenge:- 🧠 Challenge: Movie Ticket Booking System 🎬
-
+  // 🧠 Challenge:- Movie Ticket Booking System 🎬
   std::string MovieName = "Kantara";
   std::string CustomerName = "Suhag";
   char Screen = 'A';
   int NumberOfTickets = 4;
   float TicketPrice = 250.50;
   bool BookingConfirmed = true;
-
   const double GSTMovie = 0.18;
   int ConvenienceFee = 25;
 
@@ -67,7 +63,6 @@ int main() {
   double Amount = TicketCost + GSTAmount + TotalConvenienceFee;
 
   std::cout << "======== MOVIE TICKET ==========" << std::endl;
-
   std::cout << "Movie Name:- " << MovieName << std::endl;
   std::cout << "Customer Name:- " << CustomerName << std::endl;
   std::cout << "Screen:- " << Screen << std::endl;
@@ -75,18 +70,16 @@ int main() {
   std::cout << "Number of Tickets:- " << NumberOfTickets << std::endl;
   std::cout << "Booking Confirmed:- " << std::boolalpha << BookingConfirmed
             << std::endl;
-
   std::cout << "-------------------------------" << std::endl;
-
   std::cout << "Ticket Cost:- " << TicketCost << std::endl;
   std::cout << "GST Amount:- " << GSTAmount << std::endl;
   std::cout << "Total Convenience Fee:- " << TotalConvenienceFee << std::endl;
   std::cout << "Total Amount:- " << Amount << std::endl;
 
-  using namespace std;
+  // 🏏 Match Stats
   using ll = long long;
 
-  std::string PlayerName = "Virat Kholi";
+  std::string PlayerName = "Virat Kohli";
   int RunsScore = 137;
   int BallsFaced = 92;
   int Fours = 11;
@@ -99,32 +92,47 @@ int main() {
 
   std::cout << "===== MATCH STATS =====" << std::endl;
   std::cout << "Player Name:- " << PlayerName << std::endl;
-  std::cout << "Runs Runs:- " << RunsScore << std::endl;
-  std::cout << "Player Balls:- " << BallsFaced << std::endl;
-  std::cout << "Player Fours:- " << Fours << std::endl;
-  std::cout << "Player Sixes:- " << Sixes << std::endl;
-  std::cout << "Boundary Runs:- :- " << BoundaryRuns << std::endl;
-  std::cout << "Player Strike Rate:- " << StrikeRate << std::endl;
-  std::cout << "Player Careers Runs:- " << CareerRuns << std::endl;
+  std::cout << "Runs:- " << RunsScore << std::endl;
+  std::cout << "Balls:- " << BallsFaced << std::endl;
+  std::cout << "Fours:- " << Fours << std::endl;
+  std::cout << "Sixes:- " << Sixes << std::endl;
+  std::cout << "Boundary Runs:- " << BoundaryRuns << std::endl;
+  std::cout << "Strike Rate:- " << StrikeRate << std::endl;
+  std::cout << "Career Runs:- " << CareerRuns << std::endl;
 
   // 🎯 Challenge 1 — User Profile
-
   std::string Name;
   int Currentage;
   double salary;
   char grade;
   bool Develop;
 
-  std::cout << "Name:- " << std::endl;
-  std::cin >> Name;
-  std::cout << "Age:-" << std::endl;
+  std::cout << "Name:- ";
+  std::getline(std::cin, Name); // reads the full line, spaces included
+  std::cout << "Age:- ";
   std::cin >> Currentage;
-  std::cout << "Salary:- " << std::endl;
+  std::cout << "Salary:- ";
   std::cin >> salary;
-  std::cout << "Grade:- " << std::endl;
+  std::cout << "Grade:- ";
   std::cin >> grade;
-  std::cout << "Developer:- " << std::endl;
+  std::cout << "Developer (1 = yes, 0 = no):- ";
   std::cin >> Develop;
+
+  std::cout << "\n--- Profile ---" << std::endl;
+  std::cout << "Name:- " << Name << std::endl;
+  std::cout << "Age:- " << Currentage << std::endl;
+  std::cout << "Salary:- " << salary << std::endl;
+  std::cout << "Grade:- " << grade << std::endl;
+  std::cout << "Developer:- " << std::boolalpha << Develop << std::endl;
+
+  // 🧠 Hypotenuse Calculator
+  double a, b;
+  std::cout << "\nEnter side A:- ";
+  std::cin >> a;
+  std::cout << "Enter side B:- ";
+  std::cin >> b;
+  double hypotenuse = std::sqrt(a * a + b * b);
+  std::cout << "The hypotenuse of A and B is " << hypotenuse << std::endl;
 
   return 0;
 }

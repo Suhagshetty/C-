@@ -1,3 +1,4 @@
+#include <cmath>
 #include <iostream>
 int main() {
   // Addition
@@ -61,7 +62,7 @@ int main() {
   std::cout << C << std::endl;
   C *= 5;
   std::cout << C << std::endl;
-  C / +5;
+  C /= 5;
   std::cout << C << std::endl;
   C %= 5;
   std::cout << C << std::endl;
@@ -96,6 +97,49 @@ int main() {
   std::cout << "Your salary is:- " << std::endl;
   std::cout << "Your age is:- " << age << std::endl;
   std::cout << "Your salary is:- " << salary << std::endl;
+
+  // UseFul Math Functions
+
+  // std::sqrt()
+  double results;
+  std::cout << "Enter a number to check its sqaure root:- ";
+  std::cin >> results;
+  std::cout << "The square root of " << results << "is:- " << std::sqrt(results)
+            << std::endl;
+
+  // STD::POW()
+
+  double resultant = std::pow(2, 3);
+  std::cout << "The power of 2 to 3 is:- " << resultant << std::endl;
+
+  // STD::ABS() :- converts negatives numbers to positive numbers.
+
+  int resultants = std::abs(-10);
+  std::cout << "The absolute value of -10 is:- " << resultants << std::endl;
+
+  // DISTANCE BETWEEN 2 NUMBERS
+
+  int differences = std::abs(2 - 78);
+  std::cout << "The distance between 2 and 78 is:- " << differences
+            << std::endl;
+
+  // Round:- std::round():- rounds to the nearest integer.
+
+  float roundedNumber = 4.6;
+  std::cout << "The. rounded number is:- " << round(roundedNumber)
+            << std::endl; // 5
+
+  // CEIL:- always rounds to the nearest integer.
+
+  double ceiledNumber = 4.1;
+  std::cout << "the ceiled number is:- " << ceil(ceiledNumber)
+            << std::endl; // 5
+
+  // STD::FLOOR:- always rounds down.
+
+  double flooredNumberr = 9.1;
+  std::cout << "The downed number is:- " << floor(flooredNumberr)
+            << std::endl; // 9
 
   return 0;
 }
