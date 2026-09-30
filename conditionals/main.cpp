@@ -103,7 +103,35 @@ int main() {
     std::cout << "Invalid day";
   }
 
-  // Console Calculator 🧮
+  // Console Calculator.
+
+  double num1;
+  double num2;
+  char operation;
+  std::cout << "Enter the first Number:- " << std::endl;
+  std::cin >> num1;
+  std::cout << "Enter the second Number:- " << std::endl;
+  std::cin >> num2;
+
+  std::cout << "Choose your operation (+,-,*,/):- " << std::endl;
+  std::cin >> operation;
+
+  switch (operation) {
+  case '+':
+    std::cout << "Result is:- " << num1 + num2;
+    break;
+  case '-':
+    std::cout << "Result is:- " << num1 - num2;
+    break;
+  case '*':
+    std::cout << "Result is:- " << num1 * num2;
+    break;
+  case '/':
+    std::cout << "Result is:- " << num1 / num2;
+    break;
+  default:
+    std::cout << "Invalid operation Nigga!";
+  }
 
   return 0;
 }
