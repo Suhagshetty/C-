@@ -52,5 +52,19 @@ int main() {
   balance = balance + 500;
   std::cout << "The Balance is:- " << balance << std::endl;
 
+  // Some more Compound Assignments:-
+
+  int C = 10;
+  C -= 5;
+  std::cout << C << std::endl;
+  C += 5;
+  std::cout << C << std::endl;
+  C *= 5;
+  std::cout << C << std::endl;
+  C / +5;
+  std::cout << C << std::endl;
+  C %= 5;
+  std::cout << C << std::endl;
+
   return 0;
 }
