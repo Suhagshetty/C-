@@ -135,4 +135,4 @@ int main() {
   std::cout << "The hypotenuse of A and B is " << hypotenuse << std::endl;
 
   return 0;
-}
+}// test
