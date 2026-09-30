@@ -86,5 +86,16 @@ int main() {
   double val = static_cast<double>(num);
   std::cout << val << std::endl;
 
+  // USER INPUT:- cin
+  int age;
+  double salary;
+  std::cout << "Enter your age:- ";
+  std::cin >> age;
+  std::cout << "Enter your salary:- ";
+  std::cin >> salary;
+  std::cout << "Your salary is:- " << std::endl;
+  std::cout << "Your age is:- " << age << std::endl;
+  std::cout << "Your salary is:- " << salary << std::endl;
+
   return 0;
 }
