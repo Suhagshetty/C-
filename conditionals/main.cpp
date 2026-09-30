@@ -76,11 +76,34 @@ int main() {
   bool hasId = true;
   if (currentAge >= 18) {
     if (hasId) {
-      std::cout << "Entry allowed";
+      std::cout << "Entry allowed" << std::endl;
     }
   } else {
     std::cout << "Not allowed" << std::endl;
   }
+
+  // SWITCH STATEMENT:- is usefull when you want to compare one value against
+  // other values.
+
+  int dayy;
+  std::cout << "ENTER THE NUMBER OF THE DAY" << std::endl;
+  std::cin >> dayy;
+  switch (dayy) {
+  case 1:
+    std::cout << "Monday";
+    break;
+  case 2:
+    std::cout << "Tuesday";
+    break;
+  case 3:
+    std::cout << "Wednesday";
+    break;
+
+  default:
+    std::cout << "Invalid day";
+  }
+
+  // Console Calculator 🧮
 
   return 0;
 }
