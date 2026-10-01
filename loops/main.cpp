@@ -40,5 +40,45 @@ int main() {
   }
   std::cout << "The largest number in the array is:-" << largest << std::endl;
 
+  // Reversing the number;
+
+  int n = 12345;
+  int reverese = 0;
+  while (n > 0) {
+    int digit = n % 10;
+    reverese = reverese * 10 + digit;
+    n = n / 10;
+  }
+  std::cout << "Reversed number is:- " << reverese << std::endl;
+
+  // PALINDROME NUMBER:- A palindrome number is a number that remains the same
+  // when its digits are reversed.
+
+  std::cout << "Enter the number to check for Palindrome:- " << std::endl;
+
+  int palindrome;
+  std::cin >> palindrome;
+
+  int original = palindrome;
+  int rev = 0;
+
+  while (palindrome > 0) {
+
+    int digit = palindrome % 10;
+
+    rev = rev * 10 + digit;
+
+    palindrome = palindrome / 10;
+  }
+
+  if (original == rev) {
+
+    std::cout << "Palindrome";
+
+  } else {
+
+    std::cout << "Not a Palindrome";
+  }
+
   return 0;
 }
