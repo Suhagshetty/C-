@@ -3,7 +3,15 @@
 void sayHello() {
   std::cout << "Hello from user defined functions!" << std::endl;
 }
-void Intro(std::string name) { std::cout << "Hello! " << name << std::endl; }
+
+void Introduce(std::string name, int age) {
+  std::cout << "Hello my name is " << name << " I am " << age << "years old."
+            << std::endl;
+}
+
+// THE RETURN KEYBOARD
+
+int add(int a, int b) { return a + b; }
 
 int main() {
 
@@ -11,7 +19,8 @@ int main() {
   // don't want everything inside main().
 
   sayHello();
-  Intro("Suhag");
+  Introduce("Suhag", 23);
+  std::cout << "The sum of 5 and 12 is: " << add(5, 12) << std::endl;
 
   return 0;
 }
