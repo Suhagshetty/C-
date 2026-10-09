@@ -28,5 +28,37 @@ int main() {
   }
   std::cout << "The largest number in the array is:- " << largest << std::endl;
 
+  // THE SIZE OF OPERATOR:- tells us how much memort a variable or data type
+  // occupies in bytes.
+
+  int age = 23;
+  double salary = 45000.75;
+  char grade = 'A';
+
+  std::cout << sizeof(age) << std::endl;
+  std::cout << sizeof(salary) << std::endl;
+  std::cout << sizeof(grade) << std::endl;
+
+  // size of operator to check for space present in the array
+
+  int scoreArry[4] = {1, 2, 3, 45};
+  std::cout << "The size of elements in our array is:- "
+            << sizeof(scoreArry[0]) + sizeof(scoreArry[1]) +
+                   sizeof(scoreArry[2]) + sizeof(scoreArry[3])
+            << std::endl;
+
+  // Calculate the sum and average:-
+
+  int marks[5] = {85, 92, 78, 88, 95};
+  int sum = 0;
+  int n = sizeof(marks) / sizeof(marks[0]);
+
+  for (int i = 0; i < n; i++) {
+    sum += marks[i];
+  }
+  double average = static_cast<double>(sum) / n;
+  std::cout << "The sum of the marks is:- " << sum << std::endl;
+  std::cout << "The average of the marks is:- " << average << std::endl;
+
   return 0;
 }
