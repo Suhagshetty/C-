@@ -18,5 +18,15 @@ int main() {
   scores[3] = 91;
   std::cout << "The updated acore of index 3 is:- " << scores[3] << std::endl;
 
+  // PROGRAM TO FIND LARGEST ELEMENT IN THE ARRAY:-
+  int numbers[5] = {45, 67, 99, 34, 78};
+  int largest = numbers[0];
+  for (int i = 1; i < 5; i++) {
+    if (numbers[i] > largest) {
+      largest = numbers[i];
+    }
+  }
+  std::cout << "The largest number in the array is:- " << largest << std::endl;
+
   return 0;
 }
